@@ -1,0 +1,109 @@
+/* Root CSS Variables for Colors */
+:root {
+    --background-color: #2E3B4E;       /* Dark Slate Blue */
+    --form-bg-color: #3C4A60;           /* Muted Dark Blue */
+    --text-color: #ECEFF4;              /* Off-White */
+    --button-bg-color: #4CAF50;         /* Dark Green */
+    --button-hover-bg-color: #388E3C;   /* Deeper Green */
+    --input-bg-color: #4B5D74;          /* Dark Grayish Blue */
+    --input-border-color: #607D8B;      /* Slate Gray */
+    --box-shadow-color: rgba(0, 0, 0, 0.5); /* Deep Shadow */
+  }
+  
+  /* Global Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Body Styling */
+  body {
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Form Container Styling */
+  .form-container {
+    background-color: var(--form-bg-color);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px var(--box-shadow-color);
+    width: 100%;
+    max-width: 700px;
+    margin: 50px;
+    color: var(--text-color);
+    text-align: center;
+  }
+  
+  /* Form Heading */
+  .form-container h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: var(--text-color);
+    border-bottom: 2px solid var(--text-color);
+    padding-bottom: 10px;
+  }
+  
+  /* Form Label Styling */
+  form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    font-size: 1.1em;
+  }
+  
+  /* Form Input & Select Styling */
+  form input[type="text"],
+  form input[type="password"],
+  form input[type="tel"],
+  form input[type="email"],
+  form textarea,
+  form select {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid var(--input-border-color);
+    background-color: var(--input-bg-color);
+    color: var(--text-color);
+    font-size: 1em;
+    outline: none;
+    box-shadow: 0px 3px 8px var(--box-shadow-color);
+  }
+  
+  /* Input Focus */
+  form input:focus,
+  form textarea:focus,
+  form select:focus {
+    border-color: var(--button-bg-color);
+  }
+  
+  /* Submit Button Styling */
+  .submit-btn {
+    width: 100%;
+    padding: 20px;
+    font-size: 1.2em;
+    border-radius: 25px;
+    border: none;
+    background-color: var(--button-bg-color);
+    color: var(--text-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 20px var(--box-shadow-color);
+  }
+  
+  .submit-btn:hover {
+    background-color: var(--button-hover-bg-color);
+  }
+  
+  /* Smooth Transitions */
+  input, textarea, select, button {
+    transition: all 0.3s ease;
+  }
+  
